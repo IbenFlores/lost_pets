@@ -1,0 +1,11 @@
+<h1>
+  <%= @pet.name %>
+</h1>
+
+<%= @pet.species %>
+<p>location: <%= @pet.address %> </p>
+<p>found on: <%= @pet.found_on %> </p>
+
+<%= link_to "delete found pet", pet_path(@pet), method: :delete, data: { confirm: "seguro?"} %>
+<br>
+<%= link_to "return to pet index", pets_path %>
